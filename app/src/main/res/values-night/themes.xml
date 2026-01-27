@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.ViewModel11" parent="Theme.Material3.DayNight.NoActionBar">
+
+
+        <item name="colorPrimary">@color/green2</item>
+        <item name="colorPrimaryDark">#285029</item>
+        <item name="colorAccent">@color/gray</item>
+
+
+        <item name="android:statusBarColor">@color/green2</item>
+        <item name="android:windowFullscreen">false</item>
+
+    </style>
+
+    <style name="Theme.ViewModel11" parent="Base.Theme.ViewModel11" />
+
+</resources>
