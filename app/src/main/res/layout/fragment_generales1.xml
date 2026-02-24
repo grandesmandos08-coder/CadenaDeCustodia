@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/gray"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".GeneralesFragment1">
+    tools:context=".ui.GeneralesFragment1">
 
     <ScrollView
         android:layout_width="match_parent"

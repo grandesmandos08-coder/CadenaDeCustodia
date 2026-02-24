@@ -1,9 +1,10 @@
-package com.example.viewmodel11
+package com.example.viewmodel11.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.example.viewmodel11.R
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +17,7 @@ class LoginActivity : AppCompatActivity() {
         Thread.sleep(1000)
         screenSplash.setKeepOnScreenCondition{false}
 
-        val intent = Intent(this,MainActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()
     }

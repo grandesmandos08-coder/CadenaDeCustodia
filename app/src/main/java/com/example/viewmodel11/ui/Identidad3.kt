@@ -1,14 +1,16 @@
-package com.example.viewmodel11
+package com.example.viewmodel11.ui
 
 import android.app.AlertDialog
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import androidx.lifecycle.ViewModelProvider
+import com.example.viewmodel11.CreatePdf
+import com.example.viewmodel11.R
 import com.example.viewmodel11.databinding.FragmentIdentidad3Binding
+import com.example.viewmodel11.viewmodel.ViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
@@ -112,7 +114,7 @@ class Identidad3 : BottomSheetDialogFragment() {
 
         val indicios = resources.getStringArray(R.array.Indicios)
 
-        val arrayAdapter = ArrayAdapter(requireContext(),R.layout.dropdown_item,indicios)
+        val arrayAdapter = ArrayAdapter(requireContext(), R.layout.dropdown_item,indicios)
 
         binding.identificacionET1.setAdapter(arrayAdapter)
         binding.identificacionET2.setAdapter(arrayAdapter)

@@ -1,25 +1,21 @@
-package com.example.viewmodel11
+package com.example.viewmodel11.ui
 
 import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.Navigation
-import androidx.navigation.Navigation.findNavController
+import com.example.viewmodel11.CreatePdf
+import com.example.viewmodel11.R
 import com.example.viewmodel11.databinding.FragmentGenerales1Binding
+import com.example.viewmodel11.viewmodel.ViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.google.android.material.datepicker.MaterialDatePicker
-import com.google.android.material.navigation.NavigationView
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
 import java.text.SimpleDateFormat
 import java.util.Calendar
-import java.util.Date
 import java.util.Locale
 
 class GeneralesFragment1 : BottomSheetDialogFragment() {

@@ -1,8 +1,7 @@
-package com.example.viewmodel11
+package com.example.viewmodel11.ui
 
 import android.content.Context
 import android.content.Intent
-import android.content.res.ColorStateList
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,8 +10,8 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
+import com.example.viewmodel11.CreatePdf
+import com.example.viewmodel11.R
 //import androidx.navigation.Navigation
 import com.example.viewmodel11.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
@@ -42,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         navView.itemIconTintList=null
 
 
-        toogle= ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open, R.string.close)
+        toogle= ActionBarDrawerToggle(this,drawerLayout,toolbar, R.string.open, R.string.close)
         drawerLayout.addDrawerListener(toogle)
         toogle.syncState()
 
@@ -83,29 +82,29 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_6 -> replaceFragment(Embalaje6())
                 R.id.nav_7 -> replaceFragment(ServPub7())
                 R.id.nav_8 -> replaceFragment(Traslado8())
-                R.id.createPdf_nav->replaceFragment(CreatePdf())
+                R.id.createPdf_nav ->replaceFragment(CreatePdf())
 
-                R.id.acerca-> {
+                R.id.acerca -> {
                 val url = "https://cadenadecustodia-movil.blogspot.com/2024/04/cadena-de-custodia-movil.html"
                 val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
                 startActivity(intent)
             }
-                R.id.politica->{
+                R.id.politica ->{
                     val url = "https://www.termsfeed.com/live/a352a5e4-81e2-4afc-bf1c-d603c1760c17"
                     val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
                     startActivity(intent)
                 }
-                R.id.nav_face->{
+                R.id.nav_face ->{
                     val url = "https://www.facebook.com/profile.php?id=61558247800618"
                     val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
                     startActivity(intent)
                 }
-                R.id.nav_mess->{
+                R.id.nav_mess ->{
                     val url = "https://m.me/310917218762714"
                     val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
                     startActivity(intent)
                 }
-                R.id.tutorial_nav->replaceFragment(Tutorial())
+                R.id.tutorial_nav ->replaceFragment(Tutorial())
 
             }
 

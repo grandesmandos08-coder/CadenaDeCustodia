@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="@color/gray"
     android:id="@+id/CreatePdf"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <HorizontalScrollView
         android:id="@+id/scroll"

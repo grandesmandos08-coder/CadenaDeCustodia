@@ -1,4 +1,4 @@
-package com.example.viewmodel11
+package com.example.viewmodel11.ui
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -7,8 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import androidx.lifecycle.ViewModelProvider
+import com.example.viewmodel11.CreatePdf
+import com.example.viewmodel11.R
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.example.viewmodel11.databinding.FragmentInicio2Binding
+import com.example.viewmodel11.viewmodel.ViewModel
+
 class InicioFragment2 :  BottomSheetDialogFragment() {
 
     private lateinit var binding: FragmentInicio2Binding
@@ -68,7 +72,7 @@ class InicioFragment2 :  BottomSheetDialogFragment() {
         }
 
         val tachar = resources.getStringArray(R.array.Tachar)
-        val arrayAdapter = ArrayAdapter(requireContext(),R.layout.dropdown_item,tachar)
+        val arrayAdapter = ArrayAdapter(requireContext(), R.layout.dropdown_item,tachar)
         binding.autocompletelocalizacion.setAdapter(arrayAdapter)
         binding.autocompleteDescubrimiento.setAdapter(arrayAdapter)
         binding.autocompleteAportacion.setAdapter(arrayAdapter)
